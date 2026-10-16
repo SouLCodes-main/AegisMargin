@@ -12,7 +12,7 @@ def load_and_process_data(data_dir="data"):
     df = df.merge(customers, on="customer_id", how="left")
 
     # Feature Engineering
-    df["effective_revenue"] = df["quantity"] * df["unit_price"] * (1 - df["discount_pct"])
+    df["effective_revenue"] = df["quantity"] * df["unit_price"]
     df["cogs"] = df["quantity"] * df["unit_cost"]
     df["gross_profit"] = df["effective_revenue"] - df["cogs"]
     df["cost_price_ratio"] = df["unit_cost"] / df["list_price"].replace(0, 1)
