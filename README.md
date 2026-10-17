@@ -135,7 +135,7 @@ flowchart LR
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│  PRESENTATION   FastAPI + Jinja2 dashboard (KPIs · Investigator) │
+│  PRESENTATION   FastAPI + Jinja2 dashboard                   │
 ├──────────────────────────────────────────────────────────────┤
 │  DECISIONING    Severity-ranked manager remediation playbook │
 ├──────────────────────────────────────────────────────────────┤
